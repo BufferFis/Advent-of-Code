@@ -18,5 +18,16 @@ def main():
         sum += abs(int(list1[i]) - int(list2[i]))
     print(sum)
 
+def main2():
+    list1, list2 = read_input('day1input.txt')
+    list1.sort()
+    list2.sort()
+    sum = 0
+    for num in list1:
+        count = list2.count(num)
+        sum += int(num) * count
+    print(sum)
+
 if __name__ == '__main__':
-    main()
+    main1() # For first part
+    #main2() # For second part
