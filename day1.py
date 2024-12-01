@@ -29,5 +29,5 @@ def main2():
     print(sum)
 
 if __name__ == '__main__':
-    main1() # For first part
+    main() # For first part
     #main2() # For second part
